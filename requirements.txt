@@ -1,0 +1,2 @@
+#wget https://pjreddie.com/media/files/yolov3.weights
+opencv-python==3.4.8.29
