@@ -38,7 +38,7 @@ ln = [ln[i[0] - 1] for i in net.getUnconnectedOutLayers()]
 
 # initialize the video stream, pointer to output video file, and
 # frame dimensions
-vs = cv2.VideoCapture(args["input"])
+vs = cv2.VideoCapture(0) if not args["input"] else cv2.VideoCapture(args["input"])
 writer = None
 (W, H) = (None, None)
 # try to determine the total number of frames in the video file
